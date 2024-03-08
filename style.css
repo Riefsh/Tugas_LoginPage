@@ -1,0 +1,157 @@
+@import url(https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts/blob/master/SF-Pro-Display-Regular.otf);
+@font-face {
+  font-family: "SFR";
+  src: url("font/SF-Pro-Rounded-Regular.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  src: url("font/SF-Pro-Display-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+section .login {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section .login .form-login {
+  width: 50%;
+  font-size: 80%;
+}
+
+section .login .form-login h2 {
+  font-weight: 600;
+  font-size: 2.25em;
+  margin-bottom: 1.75rem;
+  font-family: "SFR";
+  /* font-family: "San Francisco Rounded", sans-serif;
+    font-weight: bold; */
+}
+
+section .login .form-login p {
+  font-family: "SF";
+  color: #313957;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+section .login .form-login .input-form {
+  margin-bottom: 1rem;
+}
+
+section .login .form-login .input-form span {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: black;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+section .login .form-login .input-form input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: #f7fbff;
+  background: transparent;
+  border-radius: 12px;
+}
+
+section .login .form-login .input-form input[type="submit"] {
+  background: #162d3a;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+section .login .form-login .forget-section {
+  text-align: right;
+}
+
+section .login .form-login .forget-section a {
+  color: #1e4ae9;
+}
+
+section .login .form-login .signup-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+section .login .form-login .signup-section a {
+  color: #1e4ae9;
+}
+
+section .login .form-login .copyright {
+  text-align: center;
+  margin-top: 6rem;
+  color: #959cb6;
+}
+
+section .imgBg {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+section .imgBg img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 24px;
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 70%;
+  }
+
+  section {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  section .imgBg {
+    /* position: relative; */
+    width: 100%;
+    /* height: 40%; */
+    margin-top: 1rem;
+  }
+
+  section .imgBg img {
+    height: 11.25rem;
+    padding: 0 1.5rem;
+    border-radius: 2.5rem;
+  }
+
+  section .login {
+    width: 100%;
+    transform: translateY(-6rem);
+  }
+}
